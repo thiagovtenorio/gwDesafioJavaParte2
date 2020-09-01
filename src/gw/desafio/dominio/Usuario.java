@@ -7,6 +7,7 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String senha;
+	private String salt;
 	private List<Telefone> telefones;
 	private Date dataCriacao;
 	private Date dataAtualizacao;
@@ -29,6 +30,12 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	public String getSalt() {
+		return salt;
+	}
+	public void setSalt(String salt) {
+		this.salt = salt;
 	}
 	public List<Telefone> getTelefones() {
 		return telefones;

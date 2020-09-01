@@ -22,5 +22,6 @@ CREATE TABLE `desafiogw`.`tbusuario` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-ALTER TABLE `desafiogw`.`tbtelefoneusuario` 
-CHANGE COLUMN `telefone` `numero` VARCHAR(45) NULL DEFAULT NULL ;
+ALTER TABLE `desafiogw`.`tbusuario` 
+CHANGE COLUMN `senha` `senha` VARCHAR(150) NULL DEFAULT NULL ,
+CHANGE COLUMN `salt` `salt` VARCHAR(150) NULL DEFAULT NULL ;
